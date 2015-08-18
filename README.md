@@ -9,9 +9,9 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
   - "-mach" will do matching on two .sift files, and two full paths to .sift files are used as inputs. A temporary .mat binary      matching file will be output in the same folder as two .sift files. Example: C:/CODE -mach -indb C:/Image1.sift -inqy           C:/Image2.sift
   - "-blat" will do the filtering and output filtered matches assuming that you've already got the .mat file and two .sift files     in the folder. It still takes two .sift files as inputs and assume that the .mat file is in the same folder. Example:           C:/CODE -blat -indb C:/Image1.sift -inqy C:/Image2.sift
   - "-mach" + "-blat" will perform the previous two steps altogether. The output is the filtered matchings which is a .txt file.     The temporary .mat file will not be generated. Example: C:/CODE -mach -blat -indb C:/Image1.sift -inqy C:/Image2.sift
-  - "-pwis" will take a .txt file as input and perform full matching between all pairs of images in the input list. Assuming        image_list.txt is as follows:
-    C:/Image1.png
-    C:/Image2.png
+  - "-pwis" will take a .txt file as input and perform full matching between all pairs of images in the input list. Assuming        image_list.txt is as follows: <br />
+    C:/Image1.png <br />
+    C:/Image2.png <br />
     C:/Image3.png <br />
     The program will do the matching in this order: (Image1.png, Image2.png), (Image1.png, Image3.png), and (Image2.png,            Image3.png).
     Example: C:/CODE -pwis -indb C:/image_list.txt
