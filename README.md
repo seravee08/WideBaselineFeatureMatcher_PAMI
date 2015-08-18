@@ -1,5 +1,6 @@
 # WideBaselineFeatureMatcher_PAMI
 (1) How to execute the program
+
 The .exe file contained in this repo was compiled under Windows7 64bit using Microsoft Visual Studio 2010 and nvcc of CUDA V7.0. In order to run the .exe file, you need first to download and install CUDA 7.0. The program can only be ran under Windows system at this time and an Nvidia card supporting CUDA is also a necessity.
 
 (2) How to use the program
@@ -25,4 +26,5 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
   - "-nmal" tells the program that you do not want the VSFM compatible matches, you just need normal matching ouput. Example:     C:/CODE -pwis -indb C:/image_list.txt -nmal
   
 (3) Compatibility with VisualSFM
+
 The default outputs from this program including .sift and matchings.txt are all VSFM compatible. You can directly feed the outputs from thie program to VSFM without any trouble. You may notice that there is also a file called .aux. These files store the information about affine and must be put in the same folder as .sift files.
