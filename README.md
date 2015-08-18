@@ -28,9 +28,9 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
 The default outputs from this program including .sift and matchings.txt are all VSFM compatible. You can directly feed the outputs from thie program to VSFM without any trouble. You may notice that there is also a file called .aux. These files store the information about affine and must be put in the same folder as .sift files.
 
 (4) Parameter tuning <br />
-We have two sets of parameters ready for tuning: sift feature detection and bilateral function. You can find bilateral_settings.txt and siftParam_settings.txt in the unzipped folder.
-siftParam_settings.txt
- - tilt: how many tilts you want to simulate in the affine process
+We have two sets of parameters ready for tuning: sift feature detection and bilateral function. You can find bilateral_settings.txt and siftParam_settings.txt in the unzipped folder. <br />
+siftParam_settings.txt 
+ - tilt: how many tilts you want to simulate in the affine process <br />
 The rest of the parameters are the same with Changchang Wu's SiftGPU http://cs.unc.edu/~ccwu/siftgpu/manual.pdf
 
 The parameters inside bilateral_settings.txt are currently not recommended for tuning. Further instructions will be coming soon.
