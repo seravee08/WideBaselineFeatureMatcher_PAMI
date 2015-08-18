@@ -4,15 +4,15 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
 
 (2) How to use the program
   - executing the CODE.exe from commandline without any parameters will display all parameter options <br />
-  - "-sift" will perform affine-sift feature detection. The program takes either a .txt file containing full paths to images or a full path to an image. Currently, .png, .jpg, .tif, and .bmp are supported. Example: C:/CODE -sift C:/image_list.txt
-  - "-mach" will do matching on two .sift files, and two full paths to .sift files are used as inputs. A temporary .mat binary matching file will be output in the same folder as two .sift files. Example: C:/CODE -mach -indb C:/Image1.sift -inqy C:/Image2.sift
-  - "-blat" will do the filtering and output filtered matches assuming that you've already got the .mat file and two .sift files in the folder. It still takes two .sift files as inputs and assume that the .mat file is in the same folder. Example: C:/CODE -blat -indb C:/Image1.sift -inqy C:/Image2.sift
-  - "-mach" + "-blat" will perform the previous two steps altogether. The output is the filtered matchings which is a .txt file. The temporary .mat file will not be generated. Example: C:/CODE -mach -blat -indb C:/Image1.sift -inqy C:/Image2.sift
+  - "-sift" will perform affine-sift feature detection. The program takes either a .txt file containing full paths to images     or a full path to an image. Currently, .png, .jpg, .tif, and .bmp are supported. Example: C:/CODE -sift C:/image_list.txt
+  - "-mach" will do matching on two .sift files, and two full paths to .sift files are used as inputs. A temporary .mat          binary matching file will be output in the same folder as two .sift files. Example: C:/CODE -mach -indb C:/Image1.sift       -inqy C:/Image2.sift
+  - "-blat" will do the filtering and output filtered matches assuming that you've already got the .mat file and two .sift       files in the folder. It still takes two .sift files as inputs and assume that the .mat file is in the same folder.           Example: C:/CODE -blat -indb C:/Image1.sift -inqy C:/Image2.sift
+  - "-mach" + "-blat" will perform the previous two steps altogether. The output is the filtered matchings which is a .txt       file. The temporary .mat file will not be generated. Example: C:/CODE -mach -blat -indb C:/Image1.sift -inqy                 C:/Image2.sift
   - "-pwis" will take a .txt file as input and perform full matching between all pairs of images in the input list. Assuming     image_list.txt is as follows: <br />
     C:/Image1.png <br />
     C:/Image2.png <br />
     C:/Image3.png <br />
-    The program will do the matching in this order: (Image1.png, Image2.png), (Image1.png, Image3.png), and (Image2.png,            Image3.png). <br />
+    The program will do the matching in this order: (Image1.png, Image2.png), (Image1.png, Image3.png), and (Image2.png,         Image3.png). <br />
     Example: C:/CODE -pwis -indb C:/image_list.txt
   - "-full" will take two .txt files as inputs and perform full matching between every image in the first list and every         image in the second list. Example: C:/CODE -full -indb C:/image_list1.txt -inqy C:/image_list2.txt
   - "-srdy" can be used in combination with "-pwis" or "-full". This option tells program that you've had the .sift files        ready in the same folder with the images listed in the .txt file. Example: C:/CODE -pwis -srdy -indb C:/image_list.txt
