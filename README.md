@@ -36,4 +36,4 @@ siftParam_settings.txt
  - tilt: how many tilts you want to simulate in the affine process
 The rest of the parameters are the same with Changchang Wu's SiftGPU http://cs.unc.edu/~ccwu/siftgpu/manual.pdf
 
-The parameters inside bilateral_settings.txt are currently not recommended for tuning. Further instructions will coming soon.
+The parameters inside bilateral_settings.txt are currently not recommended for tuning. Further instructions will be coming soon.
