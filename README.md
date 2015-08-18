@@ -10,9 +10,13 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
   - "-blat" will do the filtering and output filtered matches assuming that you've already got the .mat file and two .sift files     in the folder. It still takes two .sift files as inputs and assume that the .mat file is in the same folder. Example:           C:/CODE -blat -indb C:/Image1.sift -inqy C:/Image2.sift
   - "-mach" + "-blat" will perform the previous two steps altogether. The output is the filtered matchings which is a .txt file.     The temporary .mat file will not be generated. Example: C:/CODE -mach -blat -indb C:/Image1.sift -inqy C:/Image2.sift
   - "-pwis" will take a .txt file as input and perform full matching between all pairs of images in the input list. Assuming        image_list.txt is as follows:
+
     C:/Image1.png
+
     C:/Image2.png
+    
     C:/Image3.png
+    
     The program will do the matching in this order: (Image1.png, Image2.png), (Image1.png, Image3.png), and (Image2.png,            Image3.png).
     Example: C:/CODE -pwis -indb C:/image_list.txt
   - "-full" will take two .txt files as inputs and perform full matching between every image in the first list and every         image in the second list. Example: C:/CODE -full -indb C:/image_list1.txt -inqy C:/image_list2.txt
@@ -26,7 +30,6 @@ The .exe file contained in this repo was compiled under Windows7 64bit using Mic
   - "-nmal" tells the program that you do not want the VSFM compatible matches, you just need normal matching ouput. Example:     C:/CODE -pwis -indb C:/image_list.txt -nmal
   
 (3) Compatibility with VisualSFM
-
 The default outputs from this program including .sift and matchings.txt are all VSFM compatible. You can directly feed the outputs from thie program to VSFM without any trouble. You may notice that there is also a file called .aux. These files store the information about affine and must be put in the same folder as .sift files.
 
 (4) Parameter tuning
