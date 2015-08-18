@@ -2,7 +2,7 @@
 (1) How to execute the program <br />
 The .exe file contained in this repo was compiled under Windows7 64bit using Microsoft Visual Studio 2010 and nvcc of CUDA V7.0. In order to run the .exe file, you need first to download and install CUDA 7.0. The program can only be ran under Windows system at this time and an Nvidia card supporting CUDA is also a necessity.
 
-(2) How to use the program <br />
+(2) How to use the program
   - executing the CODE.exe from commandline without any parameters will display all parameter options <br />
   - "-sift" will perform affine-sift feature detection. The program takes either a .txt file containing full paths to images or a full path to an image. Currently, .png, .jpg, .tif, and .bmp are supported. Example: C:/CODE -sift C:/image_list.txt
   - "-mach" will do matching on two .sift files, and two full paths to .sift files are used as inputs. A temporary .mat binary matching file will be output in the same folder as two .sift files. Example: C:/CODE -mach -indb C:/Image1.sift -inqy C:/Image2.sift
