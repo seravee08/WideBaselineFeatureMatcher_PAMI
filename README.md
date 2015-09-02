@@ -1,5 +1,5 @@
 # WideBaselineFeatureMatcher_PAMI
-New: We have just released the libraries for CODE matcher, check them out under CODE-Libs folder !!
+New: We have just released the libraries for wide baseline feature matcher, check them out under CODE-Libs folder !!
 
 (1) How to run the program <br />
 The .exe file contained in this repo was compiled under Windows7 64bit using Microsoft Visual Studio 2010 and nvcc of CUDA 7.0. In order to run the .exe file, you need first to download and install CUDA 7.0. The program can only be ran under Windows system at this time and an Nvidia card supporting CUDA is also a necessity.
